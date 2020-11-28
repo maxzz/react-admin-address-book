@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/maxzz/react-admin-address-book/static/css/main.8f13a2dd.chunk.css",
+    "main.js": "/maxzz/react-admin-address-book/static/js/main.6334b562.chunk.js",
+    "main.js.map": "/maxzz/react-admin-address-book/static/js/main.6334b562.chunk.js.map",
+    "runtime-main.js": "/maxzz/react-admin-address-book/static/js/runtime-main.f33e33ce.js",
+    "runtime-main.js.map": "/maxzz/react-admin-address-book/static/js/runtime-main.f33e33ce.js.map",
+    "static/js/2.8e17d227.chunk.js": "/maxzz/react-admin-address-book/static/js/2.8e17d227.chunk.js",
+    "static/js/2.8e17d227.chunk.js.map": "/maxzz/react-admin-address-book/static/js/2.8e17d227.chunk.js.map",
+    "static/js/3.773bb11d.chunk.js": "/maxzz/react-admin-address-book/static/js/3.773bb11d.chunk.js",
+    "static/js/3.773bb11d.chunk.js.map": "/maxzz/react-admin-address-book/static/js/3.773bb11d.chunk.js.map",
+    "index.html": "/maxzz/react-admin-address-book/index.html",
+    "static/css/main.8f13a2dd.chunk.css.map": "/maxzz/react-admin-address-book/static/css/main.8f13a2dd.chunk.css.map",
+    "static/js/2.8e17d227.chunk.js.LICENSE.txt": "/maxzz/react-admin-address-book/static/js/2.8e17d227.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f33e33ce.js",
+    "static/js/2.8e17d227.chunk.js",
+    "static/css/main.8f13a2dd.chunk.css",
+    "static/js/main.6334b562.chunk.js"
+  ]
+}
