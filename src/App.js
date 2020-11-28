@@ -15,7 +15,7 @@ const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
             )
         { // arg[1,2] === 'findDOMNode'; arg[3] === 'transition'
             oldLogError.apply(console, args);
-        } else {console.log('me', args);}
+        } //else {console.log('me', args);}
     }
 })();
 
