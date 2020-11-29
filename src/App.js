@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Admin, Resource/*, ListGuesser*/ } from 'react-admin';
+import { Admin, Resource, ListGuesser } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 import { UserList } from './users';
 import './App.css';
@@ -24,6 +24,7 @@ function App() {
     <Admin dataProvider={dataProvider}>
         {/* <Resource name="users" list={ListGuesser}></Resource> */}
         <Resource name="users" list={UserList}></Resource>
+        <Resource name="posts" list={ListGuesser} />
     </Admin>
   );
 }
