@@ -4,10 +4,10 @@ import { List, Datagrid, ReferenceField, TextField } from 'react-admin';
 export const PostList = props => {
     return <List {...props}>
         <Datagrid rowClick="edit">
-            <ReferenceField source="userId" reference="users">
+            <ReferenceField label="Alien vs Name" source="userId" reference="users">
                 <TextField source="name" />
             </ReferenceField>
-            <TextField source="id" />
+            <TextField label="ID" source="id" />
             <TextField source="title" />
             <TextField source="body" />
         </Datagrid>
