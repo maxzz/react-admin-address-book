@@ -1,5 +1,16 @@
 import * as React from 'react';
-import { List, Datagrid, ReferenceField, TextField, EditButton } from 'react-admin';
+import { List, Datagrid, ReferenceField, TextField, EditButton, Edit, SimpleForm, ReferenceInput, SelectInput, TextInput } from 'react-admin';
+
+export const PostEdit = props => (
+    <Edit {...props}>
+        <SimpleForm>
+            <ReferenceInput source="userId" reference="users"><SelectInput optionText="id" /></ReferenceInput>
+            <TextInput label="ID2" source="id" />
+            <TextInput source="title" />
+            {/* <TextInput source="body" /> */}
+        </SimpleForm>
+    </Edit>
+);
 
 export const PostList = props => {
     return <List {...props}>
