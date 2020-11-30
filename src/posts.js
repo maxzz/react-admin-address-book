@@ -15,7 +15,7 @@ export const PostCreate = props => (
 );
 
 export const PostEdit = props => (
-    <Edit {...props}>
+    <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
             <TextInput disabled label="ID2" source="id" />
             <ReferenceInput source="userId" reference="users"><SelectInput optionText="name" /></ReferenceInput>
@@ -26,6 +26,10 @@ export const PostEdit = props => (
         </SimpleForm>
     </Edit>
 );
+
+const PostTitle = ({ record }) => {
+    return <span>Post {record ? `"${record.title}"` : ''}</span>;
+};
 
 export const PostList = props => {
     return <List {...props}>
