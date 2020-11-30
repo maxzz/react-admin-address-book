@@ -4,10 +4,12 @@ import { List, Datagrid, ReferenceField, TextField, EditButton, Edit, SimpleForm
 export const PostEdit = props => (
     <Edit {...props}>
         <SimpleForm>
-            <ReferenceInput source="userId" reference="users"><SelectInput optionText="id" /></ReferenceInput>
-            <TextInput label="ID2" source="id" />
+            <TextInput disabled label="ID2" source="id" />
+            <ReferenceInput source="userId" reference="users"><SelectInput optionText="name" /></ReferenceInput>
+            {/* <TextInput label="ID2" source="id" /> */}
             <TextInput source="title" />
             {/* <TextInput source="body" /> */}
+            <TextInput multiline source="body" />
         </SimpleForm>
     </Edit>
 );
