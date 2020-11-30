@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Admin, Resource/*, ListGuesser*/ /*, EditGuesser */ } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
+import Dashboard from './Dashboard';
 import { UserList } from './users';
 import { PostList, PostCreate, PostEdit } from './posts';
 import PostIcon from '@material-ui/icons/Book';
@@ -32,7 +33,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 function App() {
   return (
-    <Admin dataProvider={dataProvider}>
+    <Admin dataProvider={dataProvider} dashboard={Dashboard} >
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit} icon={PostIcon} />
         {/* <Resource name="posts" list={PostList} edit={EditGuesser} /> */}
         {/* <Resource name="users" list={ListGuesser}></Resource> */}
